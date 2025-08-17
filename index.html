@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tokyo Developers Map — 4 Layers</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  html, body, #map { height: 100%; margin:0; }
+  .legend { background: white; padding: 8px 10px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+  .legend .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const colorByCompany = {
+    "Mori Building": "blue",
+    "Tokyu": "red",
+    "Mitsui Fudosan": "green",
+    "Mitsubishi Estate": "purple"
+  };
+
+  const layerGroups = {
+    "Mori Building": L.layerGroup(),
+    "Tokyu": L.layerGroup(),
+    "Mitsui Fudosan": L.layerGroup(),
+    "Mitsubishi Estate": L.layerGroup()
+  };
+
+  const map = L.map('map').setView([35.68, 139.76], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  fetch('data/projects_4cos.geojson')
+    .then(r => r.json())
+    .then(geojson => {
+      L.geoJSON(geojson, {
+        pointToLayer: function(feature, latlng) {
+          const comp = feature.properties.Company;
+          const color = colorByCompany[comp] || 'gray';
+          return L.circleMarker(latlng, {
+            radius: 7,
+            fillColor: color,
+            color: '#222',
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.95
+          });
+        },
+        onEachFeature: function(feature, layer) {
+          const p = feature.properties;
+          const html = `
+            <b>${p["프로젝트"]}</b> / <i>${p["Project"]}</i><br>
+            <b>Company</b>: ${p["회사"]} / ${p["Company"]}<br>
+            <b>Year</b>: ${p["Year"]}<br>
+            <b>Type</b>: ${p["Type"]}<br>
+            <b>GFA</b>: ${p["GFA"]} ㎡<br>
+            <b>Floors</b>: ${p["Floors"]}<br>
+            <b>Public Benefit</b>: ${p["Public Benefit"]}
+          `;
+          layer.bindPopup(html);
+          const comp = p.Company;
+          layerGroups[comp] && layerGroups[comp].addLayer(layer);
+        }
+      });
+
+      // Add layer control
+      const overlays = {
+        "Mori Building": layerGroups["Mori Building"],
+        "Tokyu": layerGroups["Tokyu"],
+        "Mitsui Fudosan": layerGroups["Mitsui Fudosan"],
+        "Mitsubishi Estate": layerGroups["Mitsubishi Estate"]
+      };
+      for (const k in overlays) overlays[k].addTo(map);
+      L.control.layers(null, overlays, { collapsed:false, position:'topright' }).addTo(map);
+    });
+</script>
+</body>
+</html>
