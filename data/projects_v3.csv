@@ -1,0 +1,30 @@
+Company,회사,Project,프로젝트,Lat,Lng,Year,Type,GFA,Floors,Public Benefit
+Mori Building,모리 빌딩,Azabudai Hills,아자부다이 힐스,35.6615,139.7414,2023,Mixed-use,"~860,000",64F,"24,000㎡ green, plazas, intl. school, clinic"
+Mori Building,모리 빌딩,Roppongi Hills Mori Tower,롯폰기 힐스 모리 타워,35.6605,139.7292,2003,Mixed-use,"~379,000",54F,"Mori Art Museum, rooftop garden"
+Mori Building,모리 빌딩,ARK Hills,아크 힐즈,35.6653,139.7395,1986 (renewal),Mixed-use,"~215,000",37F,"Garden & concert hall, plazas"
+Mori Building,모리 빌딩,Toranomon Hills Station Tower,토라노몬 힐스 스테이션 타워,35.6665,139.7499,2023,Mixed-use,"~244,000",49F,"Direct station link, public deck"
+Tokyu,도큐,Shibuya Scramble Square,시부야 스크램블 스퀘어,35.658,139.7016,2019~ (phased),Mixed-use,"~276,000",47F,"Observation deck, transit connection"
+Tokyu,도큐,Shibuya Stream,시부야 스트림,35.6571,139.7043,2018,Mixed-use,"~116,000",35F,"Hall, riverside space, plazas"
+Tokyu,도큐,Miyashita Park,미야시타파크,35.6639,139.6993,2020,Park+Retail+Hotel,"~46,000",Low-rise,"Rooftop park, sports, public deck"
+Tokyu,도큐,Futako-Tamagawa Rise,후타코타마가와 라이즈,35.6112,139.6276,2011–2015,Mixed-use,"~350,000",up to 30F,"Riverfront parks, decks"
+Mitsui Fudosan,미츠이후도산,Tokyo Midtown Roppongi,도쿄 미드타운 롯폰기,35.6655,139.731,2007,Mixed-use,"~563,000",54F,"Park interface, museums"
+Mitsui Fudosan,미츠이후도산,Tokyo Midtown Hibiya,도쿄 미드타운 히비야,35.6717,139.7593,2018,Mixed-use,"~189,000",35F,"Hibiya Park interface, cinema"
+Mitsui Fudosan,미츠이후도산,Tokyo Midtown Yaesu,도쿄 미드타운 야에스,35.6795,139.769,2023,Mixed-use,"~283,000",~45F,"Bus terminal, pedestrian links"
+Mitsui Fudosan,미츠이후도산,Nihonbashi Mitsui Tower (Mandarin Oriental),니혼바시 미츠이 타워,35.686,139.773,2005,Office/Hotel/Retail,N/A,39F,Plaza & heritage integration
+Mitsui Fudosan,미츠이후도산,COREDO Muromachi 1,코레도 무로마치 1,35.6867,139.7722,2009,Retail/Office,N/A,~20F,"Arcade, event space"
+Mitsui Fudosan,미츠이후도산,COREDO Muromachi 2,코레도 무로마치 2,35.6859,139.7725,2014,Retail/Office,N/A,~16F,Streetscape renewal
+Mitsui Fudosan,미츠이후도산,COREDO Muromachi 3,코레도 무로마치 3,35.6854,139.7718,2014,Retail/Office,N/A,~16F,"Plaza, cultural programming"
+Mitsui Fudosan,미츠이후도산,Nihonbashi Muromachi Mitsui Tower (Muromachi Terrace),니혼바시 무로마치 미츠이 타워,35.6869,139.771,2019,Office/Retail,N/A,~26F,"Large deck, events, transit connection"
+Mitsui Fudosan,미츠이후도산,Nihonbashi Takashimaya S.C. (East),니혼바시 다카시마야 S.C. 동관,35.6806,139.7737,2018,Retail (redevelopment),N/A,~8F,"Pedestrian links, atrium"
+Mitsubishi Estate,미츠비시지쇼,Marunouchi Building,마루노우치 빌딩,35.6812,139.7635,2002,Office/Retail,"~190,000",37F,"Naka-dori activation, plazas"
+Mitsubishi Estate,미츠비시지쇼,Shin-Marunouchi Building,신마루노우치 빌딩,35.6818,139.7646,2007,Office/Retail,"~195,000",38F,"Streetscape renewal, events"
+Mitsubishi Estate,미츠비시지쇼,JP Tower (KITTE),JP타워(KITTE),35.6792,139.7649,2012,Office/Retail/Museum,N/A,38F,Museum & heritage façade reuse
+Mitsubishi Estate,미츠비시지쇼,GranTokyo South Tower,그란도쿄 사우스 타워,35.6815,139.7693,2007,Office/Retail,N/A,42F,Station-front redevelopment
+Mitsubishi Estate,미츠비시지쇼,GranTokyo North Tower,그란도쿄 노스 타워,35.6819,139.7683,2007,Office/Retail,N/A,43F,Station-front redevelopment
+Mitsubishi Estate,미츠비시지쇼,Marunouchi Park Building,마루노우치 파크 빌딩,35.6779,139.763,2009,Office/Retail,N/A,34F,"Pocket parks, art program"
+Sumitomo Realty & Development,스미토모 부동산,Shinjuku Sumitomo Building,신주쿠 스미토모 빌딩,35.6937,139.6952,1974 (renov.),Office,N/A,52F,"Public plaza (Triangle), event space"
+Sumitomo Realty & Development,스미토모 부동산,Roppongi Grand Tower (Roppongi 3-chome East),롯폰기 그랜드 타워,35.6648,139.7399,2016,Office/Residential/Retail,N/A,43F,"Pedestrian deck, community space"
+Nomura Real Estate,노무라 부동산,Shinjuku Nomura Building,신주쿠 노무라 빌딩,35.6948,139.6959,1978,Office/Retail,N/A,50F,"Sky-view dining, plaza"
+Heiwa Real Estate,헤이와 부동산,KABUTO ONE (Nihonbashi Kabutocho),카부토 원,35.6789,139.7774,2021,Office/Retail/Hall,N/A,15F,"District revitalization, hall"
+Tokyo Tatemono,도쿄 타테모노,Tokyo Square Garden (Kyobashi),도쿄 스퀘어 가든,35.6756,139.7709,2013,Office/Retail,N/A,24F,"Large atrium, urban garden"
+Mori Trust,모리 트러스트,Kamiyacho Trust Tower (Tokyo World Gate),가미야초 트러스트 타워,35.6646,139.7437,2020,Office/Hotel/Retail,N/A,38F,"Urban plaza, international hotel"

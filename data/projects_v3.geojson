@@ -1,0 +1,614 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mori Building",
+        "회사": "모리 빌딩",
+        "Project": "Azabudai Hills",
+        "프로젝트": "아자부다이 힐스",
+        "Year": "2023",
+        "Type": "Mixed-use",
+        "GFA": "~860,000",
+        "Floors": "64F",
+        "Public Benefit": "24,000㎡ green, plazas, intl. school, clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7414,
+          35.6615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mori Building",
+        "회사": "모리 빌딩",
+        "Project": "Roppongi Hills Mori Tower",
+        "프로젝트": "롯폰기 힐스 모리 타워",
+        "Year": "2003",
+        "Type": "Mixed-use",
+        "GFA": "~379,000",
+        "Floors": "54F",
+        "Public Benefit": "Mori Art Museum, rooftop garden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7292,
+          35.6605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mori Building",
+        "회사": "모리 빌딩",
+        "Project": "ARK Hills",
+        "프로젝트": "아크 힐즈",
+        "Year": "1986 (renewal)",
+        "Type": "Mixed-use",
+        "GFA": "~215,000",
+        "Floors": "37F",
+        "Public Benefit": "Garden & concert hall, plazas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7395,
+          35.6653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mori Building",
+        "회사": "모리 빌딩",
+        "Project": "Toranomon Hills Station Tower",
+        "프로젝트": "토라노몬 힐스 스테이션 타워",
+        "Year": "2023",
+        "Type": "Mixed-use",
+        "GFA": "~244,000",
+        "Floors": "49F",
+        "Public Benefit": "Direct station link, public deck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7499,
+          35.6665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Tokyu",
+        "회사": "도큐",
+        "Project": "Shibuya Scramble Square",
+        "프로젝트": "시부야 스크램블 스퀘어",
+        "Year": "2019~ (phased)",
+        "Type": "Mixed-use",
+        "GFA": "~276,000",
+        "Floors": "47F",
+        "Public Benefit": "Observation deck, transit connection"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7016,
+          35.658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Tokyu",
+        "회사": "도큐",
+        "Project": "Shibuya Stream",
+        "프로젝트": "시부야 스트림",
+        "Year": "2018",
+        "Type": "Mixed-use",
+        "GFA": "~116,000",
+        "Floors": "35F",
+        "Public Benefit": "Hall, riverside space, plazas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7043,
+          35.6571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Tokyu",
+        "회사": "도큐",
+        "Project": "Miyashita Park",
+        "프로젝트": "미야시타파크",
+        "Year": "2020",
+        "Type": "Park+Retail+Hotel",
+        "GFA": "~46,000",
+        "Floors": "Low-rise",
+        "Public Benefit": "Rooftop park, sports, public deck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6993,
+          35.6639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Tokyu",
+        "회사": "도큐",
+        "Project": "Futako-Tamagawa Rise",
+        "프로젝트": "후타코타마가와 라이즈",
+        "Year": "2011–2015",
+        "Type": "Mixed-use",
+        "GFA": "~350,000",
+        "Floors": "up to 30F",
+        "Public Benefit": "Riverfront parks, decks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6276,
+          35.6112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "Tokyo Midtown Roppongi",
+        "프로젝트": "도쿄 미드타운 롯폰기",
+        "Year": "2007",
+        "Type": "Mixed-use",
+        "GFA": "~563,000",
+        "Floors": "54F",
+        "Public Benefit": "Park interface, museums"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.731,
+          35.6655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "Tokyo Midtown Hibiya",
+        "프로젝트": "도쿄 미드타운 히비야",
+        "Year": "2018",
+        "Type": "Mixed-use",
+        "GFA": "~189,000",
+        "Floors": "35F",
+        "Public Benefit": "Hibiya Park interface, cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7593,
+          35.6717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "Tokyo Midtown Yaesu",
+        "프로젝트": "도쿄 미드타운 야에스",
+        "Year": "2023",
+        "Type": "Mixed-use",
+        "GFA": "~283,000",
+        "Floors": "~45F",
+        "Public Benefit": "Bus terminal, pedestrian links"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.769,
+          35.6795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "Nihonbashi Mitsui Tower (Mandarin Oriental)",
+        "프로젝트": "니혼바시 미츠이 타워",
+        "Year": "2005",
+        "Type": "Office/Hotel/Retail",
+        "GFA": "N/A",
+        "Floors": "39F",
+        "Public Benefit": "Plaza & heritage integration"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.773,
+          35.686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "COREDO Muromachi 1",
+        "프로젝트": "코레도 무로마치 1",
+        "Year": "2009",
+        "Type": "Retail/Office",
+        "GFA": "N/A",
+        "Floors": "~20F",
+        "Public Benefit": "Arcade, event space"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7722,
+          35.6867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "COREDO Muromachi 2",
+        "프로젝트": "코레도 무로마치 2",
+        "Year": "2014",
+        "Type": "Retail/Office",
+        "GFA": "N/A",
+        "Floors": "~16F",
+        "Public Benefit": "Streetscape renewal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7725,
+          35.6859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "COREDO Muromachi 3",
+        "프로젝트": "코레도 무로마치 3",
+        "Year": "2014",
+        "Type": "Retail/Office",
+        "GFA": "N/A",
+        "Floors": "~16F",
+        "Public Benefit": "Plaza, cultural programming"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7718,
+          35.6854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "Nihonbashi Muromachi Mitsui Tower (Muromachi Terrace)",
+        "프로젝트": "니혼바시 무로마치 미츠이 타워",
+        "Year": "2019",
+        "Type": "Office/Retail",
+        "GFA": "N/A",
+        "Floors": "~26F",
+        "Public Benefit": "Large deck, events, transit connection"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.771,
+          35.6869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsui Fudosan",
+        "회사": "미츠이후도산",
+        "Project": "Nihonbashi Takashimaya S.C. (East)",
+        "프로젝트": "니혼바시 다카시마야 S.C. 동관",
+        "Year": "2018",
+        "Type": "Retail (redevelopment)",
+        "GFA": "N/A",
+        "Floors": "~8F",
+        "Public Benefit": "Pedestrian links, atrium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7737,
+          35.6806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsubishi Estate",
+        "회사": "미츠비시지쇼",
+        "Project": "Marunouchi Building",
+        "프로젝트": "마루노우치 빌딩",
+        "Year": "2002",
+        "Type": "Office/Retail",
+        "GFA": "~190,000",
+        "Floors": "37F",
+        "Public Benefit": "Naka-dori activation, plazas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7635,
+          35.6812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsubishi Estate",
+        "회사": "미츠비시지쇼",
+        "Project": "Shin-Marunouchi Building",
+        "프로젝트": "신마루노우치 빌딩",
+        "Year": "2007",
+        "Type": "Office/Retail",
+        "GFA": "~195,000",
+        "Floors": "38F",
+        "Public Benefit": "Streetscape renewal, events"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7646,
+          35.6818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsubishi Estate",
+        "회사": "미츠비시지쇼",
+        "Project": "JP Tower (KITTE)",
+        "프로젝트": "JP타워(KITTE)",
+        "Year": "2012",
+        "Type": "Office/Retail/Museum",
+        "GFA": "N/A",
+        "Floors": "38F",
+        "Public Benefit": "Museum & heritage façade reuse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7649,
+          35.6792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsubishi Estate",
+        "회사": "미츠비시지쇼",
+        "Project": "GranTokyo South Tower",
+        "프로젝트": "그란도쿄 사우스 타워",
+        "Year": "2007",
+        "Type": "Office/Retail",
+        "GFA": "N/A",
+        "Floors": "42F",
+        "Public Benefit": "Station-front redevelopment"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7693,
+          35.6815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsubishi Estate",
+        "회사": "미츠비시지쇼",
+        "Project": "GranTokyo North Tower",
+        "프로젝트": "그란도쿄 노스 타워",
+        "Year": "2007",
+        "Type": "Office/Retail",
+        "GFA": "N/A",
+        "Floors": "43F",
+        "Public Benefit": "Station-front redevelopment"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7683,
+          35.6819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mitsubishi Estate",
+        "회사": "미츠비시지쇼",
+        "Project": "Marunouchi Park Building",
+        "프로젝트": "마루노우치 파크 빌딩",
+        "Year": "2009",
+        "Type": "Office/Retail",
+        "GFA": "N/A",
+        "Floors": "34F",
+        "Public Benefit": "Pocket parks, art program"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.763,
+          35.6779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Sumitomo Realty & Development",
+        "회사": "스미토모 부동산",
+        "Project": "Shinjuku Sumitomo Building",
+        "프로젝트": "신주쿠 스미토모 빌딩",
+        "Year": "1974 (renov.)",
+        "Type": "Office",
+        "GFA": "N/A",
+        "Floors": "52F",
+        "Public Benefit": "Public plaza (Triangle), event space"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6952,
+          35.6937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Sumitomo Realty & Development",
+        "회사": "스미토모 부동산",
+        "Project": "Roppongi Grand Tower (Roppongi 3-chome East)",
+        "프로젝트": "롯폰기 그랜드 타워",
+        "Year": "2016",
+        "Type": "Office/Residential/Retail",
+        "GFA": "N/A",
+        "Floors": "43F",
+        "Public Benefit": "Pedestrian deck, community space"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7399,
+          35.6648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Nomura Real Estate",
+        "회사": "노무라 부동산",
+        "Project": "Shinjuku Nomura Building",
+        "프로젝트": "신주쿠 노무라 빌딩",
+        "Year": "1978",
+        "Type": "Office/Retail",
+        "GFA": "N/A",
+        "Floors": "50F",
+        "Public Benefit": "Sky-view dining, plaza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6959,
+          35.6948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Heiwa Real Estate",
+        "회사": "헤이와 부동산",
+        "Project": "KABUTO ONE (Nihonbashi Kabutocho)",
+        "프로젝트": "카부토 원",
+        "Year": "2021",
+        "Type": "Office/Retail/Hall",
+        "GFA": "N/A",
+        "Floors": "15F",
+        "Public Benefit": "District revitalization, hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7774,
+          35.6789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Tokyo Tatemono",
+        "회사": "도쿄 타테모노",
+        "Project": "Tokyo Square Garden (Kyobashi)",
+        "프로젝트": "도쿄 스퀘어 가든",
+        "Year": "2013",
+        "Type": "Office/Retail",
+        "GFA": "N/A",
+        "Floors": "24F",
+        "Public Benefit": "Large atrium, urban garden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7709,
+          35.6756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Company": "Mori Trust",
+        "회사": "모리 트러스트",
+        "Project": "Kamiyacho Trust Tower (Tokyo World Gate)",
+        "프로젝트": "가미야초 트러스트 타워",
+        "Year": "2020",
+        "Type": "Office/Hotel/Retail",
+        "GFA": "N/A",
+        "Floors": "38F",
+        "Public Benefit": "Urban plaza, international hotel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7437,
+          35.6646
+        ]
+      }
+    }
+  ]
+}
