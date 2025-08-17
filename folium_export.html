@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc50891ba0bc8aeb19907c3bc3c051f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc50891ba0bc8aeb19907c3bc3c051f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc50891ba0bc8aeb19907c3bc3c051f9 = L.map(
+                "map_fc50891ba0bc8aeb19907c3bc3c051f9",
+                {
+                    center: [35.68, 139.76],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2745c2a57d0a362698d4619dd3e1413f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fc50891ba0bc8aeb19907c3bc3c051f9);
+        
+    
+            var feature_group_ddd174d45625a8b17dca67bb528356b2 = L.featureGroup(
+                {}
+            ).addTo(map_fc50891ba0bc8aeb19907c3bc3c051f9);
+        
+    
+            var marker_cluster_af46c8cf08f53c0c404a8c52536365e5 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_ddd174d45625a8b17dca67bb528356b2.addLayer(marker_cluster_af46c8cf08f53c0c404a8c52536365e5);
+        
+    
+            var marker_1a7fd07cf57feb1d3392a12f7a203241 = L.marker(
+                [35.6615, 139.7414],
+                {}
+            ).addTo(marker_cluster_af46c8cf08f53c0c404a8c52536365e5);
+        
+    
+            var icon_f8b9f54daa9f04dc586934d07555e42c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a7fd07cf57feb1d3392a12f7a203241.setIcon(icon_f8b9f54daa9f04dc586934d07555e42c);
+        
+    
+        var popup_ffc6379421bb07a2f85951bd27349c7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_830166734ecc5025277b8aba0da9b9b0 = $(`<div id="html_830166734ecc5025277b8aba0da9b9b0" style="width: 100.0%; height: 100.0%;">     <b>아자부다이 힐스</b> / <i>Azabudai Hills (麻布台ヒルズ)</i><br>     <b>회사</b>: 모리 빌딩 / Mori Building<br>     <b>연도</b>: 2023<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~860,000 ㎡<br>     <b>층수</b>: 64F<br>     <b>공공기여</b>: Green 24,000㎡, plaza, intl. school, medical     </div>`)[0];
+            popup_ffc6379421bb07a2f85951bd27349c7c.setContent(html_830166734ecc5025277b8aba0da9b9b0);
+        
+
+        marker_1a7fd07cf57feb1d3392a12f7a203241.bindPopup(popup_ffc6379421bb07a2f85951bd27349c7c)
+        ;
+
+        
+    
+    
+            marker_1a7fd07cf57feb1d3392a12f7a203241.bindTooltip(
+                `<div>
+                     아자부다이 힐스 (Azabudai Hills (麻布台ヒルズ))
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd97b8b9d423d2429f9c40635d068ed5 = L.marker(
+                [35.6605, 139.7292],
+                {}
+            ).addTo(marker_cluster_af46c8cf08f53c0c404a8c52536365e5);
+        
+    
+            var icon_e935b0fad929f0c7968df473f0a3833d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd97b8b9d423d2429f9c40635d068ed5.setIcon(icon_e935b0fad929f0c7968df473f0a3833d);
+        
+    
+        var popup_17efbc7594071210ccf3fc4db40a4258 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba08370db23d5524ac0d75dc00b0a756 = $(`<div id="html_ba08370db23d5524ac0d75dc00b0a756" style="width: 100.0%; height: 100.0%;">     <b>롯폰기 힐스 모리 타워</b> / <i>Roppongi Hills Mori Tower</i><br>     <b>회사</b>: 모리 빌딩 / Mori Building<br>     <b>연도</b>: 2003<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~379,000 ㎡<br>     <b>층수</b>: 54F<br>     <b>공공기여</b>: Mori Art Museum, roof garden, decks     </div>`)[0];
+            popup_17efbc7594071210ccf3fc4db40a4258.setContent(html_ba08370db23d5524ac0d75dc00b0a756);
+        
+
+        marker_fd97b8b9d423d2429f9c40635d068ed5.bindPopup(popup_17efbc7594071210ccf3fc4db40a4258)
+        ;
+
+        
+    
+    
+            marker_fd97b8b9d423d2429f9c40635d068ed5.bindTooltip(
+                `<div>
+                     롯폰기 힐스 모리 타워 (Roppongi Hills Mori Tower)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3c152445458d6f983f3fae0e8a136a5 = L.marker(
+                [35.6653, 139.7395],
+                {}
+            ).addTo(marker_cluster_af46c8cf08f53c0c404a8c52536365e5);
+        
+    
+            var icon_caeec8d4b3e36ce4332fa7e58c7fca54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d3c152445458d6f983f3fae0e8a136a5.setIcon(icon_caeec8d4b3e36ce4332fa7e58c7fca54);
+        
+    
+        var popup_ccf8f9e48802b1d098f62d2ac5a8710c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0110259d2700a2f1d62f5b8450f9b912 = $(`<div id="html_0110259d2700a2f1d62f5b8450f9b912" style="width: 100.0%; height: 100.0%;">     <b>아크 힐즈</b> / <i>ARK Hills</i><br>     <b>회사</b>: 모리 빌딩 / Mori Building<br>     <b>연도</b>: 1986 (renewal)<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~215,000 ㎡<br>     <b>층수</b>: 37F<br>     <b>공공기여</b>: ARK Garden, concert hall, plazas     </div>`)[0];
+            popup_ccf8f9e48802b1d098f62d2ac5a8710c.setContent(html_0110259d2700a2f1d62f5b8450f9b912);
+        
+
+        marker_d3c152445458d6f983f3fae0e8a136a5.bindPopup(popup_ccf8f9e48802b1d098f62d2ac5a8710c)
+        ;
+
+        
+    
+    
+            marker_d3c152445458d6f983f3fae0e8a136a5.bindTooltip(
+                `<div>
+                     아크 힐즈 (ARK Hills)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ad8bd9b4c41492e1fc0727ce4664b23 = L.marker(
+                [35.6665, 139.7499],
+                {}
+            ).addTo(marker_cluster_af46c8cf08f53c0c404a8c52536365e5);
+        
+    
+            var icon_2794028b1924d64cbbf2fa71d6a64694 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ad8bd9b4c41492e1fc0727ce4664b23.setIcon(icon_2794028b1924d64cbbf2fa71d6a64694);
+        
+    
+        var popup_6b179681735e3483c07fe509d3363e96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd07ccaeb763a4bed676c14ad35cf378 = $(`<div id="html_fd07ccaeb763a4bed676c14ad35cf378" style="width: 100.0%; height: 100.0%;">     <b>토라노몬 힐스 스테이션 타워</b> / <i>Toranomon Hills Station Tower</i><br>     <b>회사</b>: 모리 빌딩 / Mori Building<br>     <b>연도</b>: 2023<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~244,000 ㎡<br>     <b>층수</b>: 49F<br>     <b>공공기여</b>: Direct station link, plaza, decks     </div>`)[0];
+            popup_6b179681735e3483c07fe509d3363e96.setContent(html_fd07ccaeb763a4bed676c14ad35cf378);
+        
+
+        marker_5ad8bd9b4c41492e1fc0727ce4664b23.bindPopup(popup_6b179681735e3483c07fe509d3363e96)
+        ;
+
+        
+    
+    
+            marker_5ad8bd9b4c41492e1fc0727ce4664b23.bindTooltip(
+                `<div>
+                     토라노몬 힐스 스테이션 타워 (Toranomon Hills Station Tower)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_cbac7e33ff83369d4735b1fbe19f6399 = L.featureGroup(
+                {}
+            ).addTo(map_fc50891ba0bc8aeb19907c3bc3c051f9);
+        
+    
+            var marker_cluster_035e18740191819e4673b25760bc6909 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_cbac7e33ff83369d4735b1fbe19f6399.addLayer(marker_cluster_035e18740191819e4673b25760bc6909);
+        
+    
+            var marker_d8883ba11bbd0b684c7c5935dd555053 = L.marker(
+                [35.658, 139.7016],
+                {}
+            ).addTo(marker_cluster_035e18740191819e4673b25760bc6909);
+        
+    
+            var icon_a20f376282f982411089958a08f891fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8883ba11bbd0b684c7c5935dd555053.setIcon(icon_a20f376282f982411089958a08f891fc);
+        
+    
+        var popup_c77a5249433256217eb9cb58ff71e80e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ec408d759892021daea65064459ce52 = $(`<div id="html_5ec408d759892021daea65064459ce52" style="width: 100.0%; height: 100.0%;">     <b>시부야 스크램블 스퀘어</b> / <i>Shibuya Scramble Square</i><br>     <b>회사</b>: 도큐 / Tokyu<br>     <b>연도</b>: 2019~ (phased)<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~276,000 ㎡<br>     <b>층수</b>: 47F<br>     <b>공공기여</b>: Observation deck, plaza, direct station link     </div>`)[0];
+            popup_c77a5249433256217eb9cb58ff71e80e.setContent(html_5ec408d759892021daea65064459ce52);
+        
+
+        marker_d8883ba11bbd0b684c7c5935dd555053.bindPopup(popup_c77a5249433256217eb9cb58ff71e80e)
+        ;
+
+        
+    
+    
+            marker_d8883ba11bbd0b684c7c5935dd555053.bindTooltip(
+                `<div>
+                     시부야 스크램블 스퀘어 (Shibuya Scramble Square)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4246b3b336785b8bc904b5af165a5d3c = L.marker(
+                [35.6571, 139.7043],
+                {}
+            ).addTo(marker_cluster_035e18740191819e4673b25760bc6909);
+        
+    
+            var icon_5ce03f87021cb6aac397c3f460fe36da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4246b3b336785b8bc904b5af165a5d3c.setIcon(icon_5ce03f87021cb6aac397c3f460fe36da);
+        
+    
+        var popup_5633cf9b4f5bb98337a2eaa900fd454e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f9611188dc241efe41363f24033f58d = $(`<div id="html_5f9611188dc241efe41363f24033f58d" style="width: 100.0%; height: 100.0%;">     <b>시부야 스트림</b> / <i>Shibuya Stream</i><br>     <b>회사</b>: 도큐 / Tokyu<br>     <b>연도</b>: 2018<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~116,000 ㎡<br>     <b>층수</b>: 35F<br>     <b>공공기여</b>: Hall, plazas, riverside space     </div>`)[0];
+            popup_5633cf9b4f5bb98337a2eaa900fd454e.setContent(html_5f9611188dc241efe41363f24033f58d);
+        
+
+        marker_4246b3b336785b8bc904b5af165a5d3c.bindPopup(popup_5633cf9b4f5bb98337a2eaa900fd454e)
+        ;
+
+        
+    
+    
+            marker_4246b3b336785b8bc904b5af165a5d3c.bindTooltip(
+                `<div>
+                     시부야 스트림 (Shibuya Stream)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09854b60c9e8b99f4e577e1b1ffa31b9 = L.marker(
+                [35.6639, 139.6993],
+                {}
+            ).addTo(marker_cluster_035e18740191819e4673b25760bc6909);
+        
+    
+            var icon_c71735e7fe675905aff0d92ad0b0c173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09854b60c9e8b99f4e577e1b1ffa31b9.setIcon(icon_c71735e7fe675905aff0d92ad0b0c173);
+        
+    
+        var popup_bc1d12694ddc2f92123f4d4c77006894 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd66c2d917f8f4610c1d13d76c4c3c29 = $(`<div id="html_fd66c2d917f8f4610c1d13d76c4c3c29" style="width: 100.0%; height: 100.0%;">     <b>미야시타파크</b> / <i>Miyashita Park</i><br>     <b>회사</b>: 도큐 / Tokyu<br>     <b>연도</b>: 2020<br>     <b>유형</b>: Park+Retail+Hotel<br>     <b>GFA</b>: ~46,000 ㎡<br>     <b>층수</b>: ~8F (low-rise)<br>     <b>공공기여</b>: Rooftop park, sports, community     </div>`)[0];
+            popup_bc1d12694ddc2f92123f4d4c77006894.setContent(html_fd66c2d917f8f4610c1d13d76c4c3c29);
+        
+
+        marker_09854b60c9e8b99f4e577e1b1ffa31b9.bindPopup(popup_bc1d12694ddc2f92123f4d4c77006894)
+        ;
+
+        
+    
+    
+            marker_09854b60c9e8b99f4e577e1b1ffa31b9.bindTooltip(
+                `<div>
+                     미야시타파크 (Miyashita Park)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5998becaca9b552efcec7a172a06017b = L.marker(
+                [35.6112, 139.6276],
+                {}
+            ).addTo(marker_cluster_035e18740191819e4673b25760bc6909);
+        
+    
+            var icon_1fdb02234280c60c252523d675fb1e4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5998becaca9b552efcec7a172a06017b.setIcon(icon_1fdb02234280c60c252523d675fb1e4e);
+        
+    
+        var popup_e77add486d7bca0fd1a755ef53fa533f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c75ec52b6d10c82d9c4fd87effd5cf1 = $(`<div id="html_1c75ec52b6d10c82d9c4fd87effd5cf1" style="width: 100.0%; height: 100.0%;">     <b>후타코타마가와 라이즈</b> / <i>Futako-Tamagawa Rise</i><br>     <b>회사</b>: 도큐 / Tokyu<br>     <b>연도</b>: 2011–2015<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~350,000 ㎡<br>     <b>층수</b>: up to 30F<br>     <b>공공기여</b>: Parks, decks, riverfront     </div>`)[0];
+            popup_e77add486d7bca0fd1a755ef53fa533f.setContent(html_1c75ec52b6d10c82d9c4fd87effd5cf1);
+        
+
+        marker_5998becaca9b552efcec7a172a06017b.bindPopup(popup_e77add486d7bca0fd1a755ef53fa533f)
+        ;
+
+        
+    
+    
+            marker_5998becaca9b552efcec7a172a06017b.bindTooltip(
+                `<div>
+                     후타코타마가와 라이즈 (Futako-Tamagawa Rise)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_25bbcf2b6245c9dee692a383c9a96ce4 = L.featureGroup(
+                {}
+            ).addTo(map_fc50891ba0bc8aeb19907c3bc3c051f9);
+        
+    
+            var marker_cluster_729f6e2ef932e822289517c0448a1903 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_25bbcf2b6245c9dee692a383c9a96ce4.addLayer(marker_cluster_729f6e2ef932e822289517c0448a1903);
+        
+    
+            var marker_2f51aa18e227984466a2666f12037c55 = L.marker(
+                [35.6655, 139.731],
+                {}
+            ).addTo(marker_cluster_729f6e2ef932e822289517c0448a1903);
+        
+    
+            var icon_cfe439f7f7bc54bdfc5359929573f9c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f51aa18e227984466a2666f12037c55.setIcon(icon_cfe439f7f7bc54bdfc5359929573f9c4);
+        
+    
+        var popup_ec4cff2fbd9abf43fb6c6d3e6e629e4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59b12643ee532c630afba25835970835 = $(`<div id="html_59b12643ee532c630afba25835970835" style="width: 100.0%; height: 100.0%;">     <b>도쿄 미드타운 롯폰기</b> / <i>Tokyo Midtown Roppongi</i><br>     <b>회사</b>: 미츠이후도산 / Mitsui Fudosan<br>     <b>연도</b>: 2007<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~563,000 ㎡<br>     <b>층수</b>: 54F<br>     <b>공공기여</b>: Museums, park, decks     </div>`)[0];
+            popup_ec4cff2fbd9abf43fb6c6d3e6e629e4c.setContent(html_59b12643ee532c630afba25835970835);
+        
+
+        marker_2f51aa18e227984466a2666f12037c55.bindPopup(popup_ec4cff2fbd9abf43fb6c6d3e6e629e4c)
+        ;
+
+        
+    
+    
+            marker_2f51aa18e227984466a2666f12037c55.bindTooltip(
+                `<div>
+                     도쿄 미드타운 롯폰기 (Tokyo Midtown Roppongi)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc6cbf8c61303a3d2672984ee0c10dd3 = L.marker(
+                [35.6717, 139.7593],
+                {}
+            ).addTo(marker_cluster_729f6e2ef932e822289517c0448a1903);
+        
+    
+            var icon_f7f67632b1d467f54664445ce3fd4247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bc6cbf8c61303a3d2672984ee0c10dd3.setIcon(icon_f7f67632b1d467f54664445ce3fd4247);
+        
+    
+        var popup_5c6c87ead1bd81b7e5902fc466b5d9d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0aa34449881f48cef1b874044c9dbea4 = $(`<div id="html_0aa34449881f48cef1b874044c9dbea4" style="width: 100.0%; height: 100.0%;">     <b>도쿄 미드타운 히비야</b> / <i>Tokyo Midtown Hibiya</i><br>     <b>회사</b>: 미츠이후도산 / Mitsui Fudosan<br>     <b>연도</b>: 2018<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~189,000 ㎡<br>     <b>층수</b>: 35F<br>     <b>공공기여</b>: Park interface, cinema     </div>`)[0];
+            popup_5c6c87ead1bd81b7e5902fc466b5d9d3.setContent(html_0aa34449881f48cef1b874044c9dbea4);
+        
+
+        marker_bc6cbf8c61303a3d2672984ee0c10dd3.bindPopup(popup_5c6c87ead1bd81b7e5902fc466b5d9d3)
+        ;
+
+        
+    
+    
+            marker_bc6cbf8c61303a3d2672984ee0c10dd3.bindTooltip(
+                `<div>
+                     도쿄 미드타운 히비야 (Tokyo Midtown Hibiya)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f366a0a04ad8e1d95ac09a3783f34bba = L.marker(
+                [35.6795, 139.769],
+                {}
+            ).addTo(marker_cluster_729f6e2ef932e822289517c0448a1903);
+        
+    
+            var icon_3280b1469edd005db966f1b6a1e6c69a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f366a0a04ad8e1d95ac09a3783f34bba.setIcon(icon_3280b1469edd005db966f1b6a1e6c69a);
+        
+    
+        var popup_19769968779b9824c2087022f31c39b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47af30f8414da6cc2a72c70cac29de5e = $(`<div id="html_47af30f8414da6cc2a72c70cac29de5e" style="width: 100.0%; height: 100.0%;">     <b>도쿄 미드타운 야에스</b> / <i>Tokyo Midtown Yaesu</i><br>     <b>회사</b>: 미츠이후도산 / Mitsui Fudosan<br>     <b>연도</b>: 2023<br>     <b>유형</b>: Mixed-use<br>     <b>GFA</b>: ~283,000 ㎡<br>     <b>층수</b>: ~45F<br>     <b>공공기여</b>: Bus terminal, pedestrian links     </div>`)[0];
+            popup_19769968779b9824c2087022f31c39b2.setContent(html_47af30f8414da6cc2a72c70cac29de5e);
+        
+
+        marker_f366a0a04ad8e1d95ac09a3783f34bba.bindPopup(popup_19769968779b9824c2087022f31c39b2)
+        ;
+
+        
+    
+    
+            marker_f366a0a04ad8e1d95ac09a3783f34bba.bindTooltip(
+                `<div>
+                     도쿄 미드타운 야에스 (Tokyo Midtown Yaesu)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_538d3bc1ed42ccd9d701ad0107ac97fb = L.featureGroup(
+                {}
+            ).addTo(map_fc50891ba0bc8aeb19907c3bc3c051f9);
+        
+    
+            var marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b = L.markerClusterGroup(
+                {}
+            );
+            feature_group_538d3bc1ed42ccd9d701ad0107ac97fb.addLayer(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var marker_1e3417532c2be6ca4ef98717e6487732 = L.marker(
+                [35.6812, 139.7635],
+                {}
+            ).addTo(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var icon_f1d7cd50149ce9faf1dbe555b6a0bc81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1e3417532c2be6ca4ef98717e6487732.setIcon(icon_f1d7cd50149ce9faf1dbe555b6a0bc81);
+        
+    
+        var popup_63703dff8e98dac226a6361ed85d84a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_439315984061ec698b7db4c1951f1b52 = $(`<div id="html_439315984061ec698b7db4c1951f1b52" style="width: 100.0%; height: 100.0%;">     <b>마루노우치 빌딩</b> / <i>Marunouchi Building</i><br>     <b>회사</b>: 미츠비시지쇼 / Mitsubishi Estate<br>     <b>연도</b>: 2002<br>     <b>유형</b>: Office/Retail<br>     <b>GFA</b>: ~190,000 ㎡<br>     <b>층수</b>: 37F<br>     <b>공공기여</b>: Marunouchi Naka-dori activation, plazas     </div>`)[0];
+            popup_63703dff8e98dac226a6361ed85d84a6.setContent(html_439315984061ec698b7db4c1951f1b52);
+        
+
+        marker_1e3417532c2be6ca4ef98717e6487732.bindPopup(popup_63703dff8e98dac226a6361ed85d84a6)
+        ;
+
+        
+    
+    
+            marker_1e3417532c2be6ca4ef98717e6487732.bindTooltip(
+                `<div>
+                     마루노우치 빌딩 (Marunouchi Building)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58337d0065ea6b332247575cec49aade = L.marker(
+                [35.6818, 139.7646],
+                {}
+            ).addTo(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var icon_e7128a9c0a81be913f96fd84579e9649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_58337d0065ea6b332247575cec49aade.setIcon(icon_e7128a9c0a81be913f96fd84579e9649);
+        
+    
+        var popup_1943595313dba71554deccd7b00fa341 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2bc5208f38a5c8799981f094bcba45b = $(`<div id="html_a2bc5208f38a5c8799981f094bcba45b" style="width: 100.0%; height: 100.0%;">     <b>신마루노우치 빌딩</b> / <i>Shin-Marunouchi Building</i><br>     <b>회사</b>: 미츠비시지쇼 / Mitsubishi Estate<br>     <b>연도</b>: 2007<br>     <b>유형</b>: Office/Retail<br>     <b>GFA</b>: ~195,000 ㎡<br>     <b>층수</b>: 38F<br>     <b>공공기여</b>: Streetscape renewal, events     </div>`)[0];
+            popup_1943595313dba71554deccd7b00fa341.setContent(html_a2bc5208f38a5c8799981f094bcba45b);
+        
+
+        marker_58337d0065ea6b332247575cec49aade.bindPopup(popup_1943595313dba71554deccd7b00fa341)
+        ;
+
+        
+    
+    
+            marker_58337d0065ea6b332247575cec49aade.bindTooltip(
+                `<div>
+                     신마루노우치 빌딩 (Shin-Marunouchi Building)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45d445545c6af6574cd8ca5507622749 = L.marker(
+                [35.6792, 139.7649],
+                {}
+            ).addTo(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var icon_e7e84aa6fe52fedb65f4246153972069 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_45d445545c6af6574cd8ca5507622749.setIcon(icon_e7e84aa6fe52fedb65f4246153972069);
+        
+    
+        var popup_ae1eb517f024de1ed5a8f421f2bd0859 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e10f987e158ca7ee9100dcaaad40bb0d = $(`<div id="html_e10f987e158ca7ee9100dcaaad40bb0d" style="width: 100.0%; height: 100.0%;">     <b>JP타워(KITTE)</b> / <i>JP Tower (KITTE)</i><br>     <b>회사</b>: 미츠비시지쇼 / Mitsubishi Estate<br>     <b>연도</b>: 2012<br>     <b>유형</b>: Office/Retail/Museum<br>     <b>GFA</b>: N/A ㎡<br>     <b>층수</b>: 38F<br>     <b>공공기여</b>: Museum, heritage façade reuse, plaza     </div>`)[0];
+            popup_ae1eb517f024de1ed5a8f421f2bd0859.setContent(html_e10f987e158ca7ee9100dcaaad40bb0d);
+        
+
+        marker_45d445545c6af6574cd8ca5507622749.bindPopup(popup_ae1eb517f024de1ed5a8f421f2bd0859)
+        ;
+
+        
+    
+    
+            marker_45d445545c6af6574cd8ca5507622749.bindTooltip(
+                `<div>
+                     JP타워(KITTE) (JP Tower (KITTE))
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34035ca70e413fea4966e78a5d61d095 = L.marker(
+                [35.6893, 139.7657],
+                {}
+            ).addTo(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var icon_895b3ff5f611e3d2bc3a5e74c21aec6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_34035ca70e413fea4966e78a5d61d095.setIcon(icon_895b3ff5f611e3d2bc3a5e74c21aec6d);
+        
+    
+        var popup_0329d08832a7985353b16efb9c0d432e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50013ad0c6b7d7a337fd7db1b7e0efad = $(`<div id="html_50013ad0c6b7d7a337fd7db1b7e0efad" style="width: 100.0%; height: 100.0%;">     <b>오테마치 타워</b> / <i>Otemachi Tower (Aman Tokyo)</i><br>     <b>회사</b>: 미츠비시지쇼 / Mitsubishi Estate<br>     <b>연도</b>: 2014<br>     <b>유형</b>: Office/Hotel<br>     <b>GFA</b>: N/A ㎡<br>     <b>층수</b>: 38F<br>     <b>공공기여</b>: Large public green, underground concourse     </div>`)[0];
+            popup_0329d08832a7985353b16efb9c0d432e.setContent(html_50013ad0c6b7d7a337fd7db1b7e0efad);
+        
+
+        marker_34035ca70e413fea4966e78a5d61d095.bindPopup(popup_0329d08832a7985353b16efb9c0d432e)
+        ;
+
+        
+    
+    
+            marker_34035ca70e413fea4966e78a5d61d095.bindTooltip(
+                `<div>
+                     오테마치 타워 (Otemachi Tower (Aman Tokyo))
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7ee9eca081880e1de68bf65b2ed6cfc = L.marker(
+                [35.6779, 139.763],
+                {}
+            ).addTo(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var icon_f2119839789a769d5bd18bec10bc7ce0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b7ee9eca081880e1de68bf65b2ed6cfc.setIcon(icon_f2119839789a769d5bd18bec10bc7ce0);
+        
+    
+        var popup_5ea7c8d22d6cc2de7310e0e0144e84b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee904bfd7e8b9ff5cfb982294b0aef59 = $(`<div id="html_ee904bfd7e8b9ff5cfb982294b0aef59" style="width: 100.0%; height: 100.0%;">     <b>마루노우치 파크 빌딩</b> / <i>Marunouchi Park Building</i><br>     <b>회사</b>: 미츠비시지쇼 / Mitsubishi Estate<br>     <b>연도</b>: 2009<br>     <b>유형</b>: Office/Retail<br>     <b>GFA</b>: N/A ㎡<br>     <b>층수</b>: 34F<br>     <b>공공기여</b>: Pocket parks, art program     </div>`)[0];
+            popup_5ea7c8d22d6cc2de7310e0e0144e84b3.setContent(html_ee904bfd7e8b9ff5cfb982294b0aef59);
+        
+
+        marker_b7ee9eca081880e1de68bf65b2ed6cfc.bindPopup(popup_5ea7c8d22d6cc2de7310e0e0144e84b3)
+        ;
+
+        
+    
+    
+            marker_b7ee9eca081880e1de68bf65b2ed6cfc.bindTooltip(
+                `<div>
+                     마루노우치 파크 빌딩 (Marunouchi Park Building)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e55730c359a8df9bd9a61b8bd5900fd9 = L.marker(
+                [35.6815, 139.7693],
+                {}
+            ).addTo(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var icon_bbb08ccb567c5f2b5bc6c23e4e05ab47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e55730c359a8df9bd9a61b8bd5900fd9.setIcon(icon_bbb08ccb567c5f2b5bc6c23e4e05ab47);
+        
+    
+        var popup_0265fc48f986404e1d6c5a96d86f0c06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61ba212473ec8754c8edad6be1e458ad = $(`<div id="html_61ba212473ec8754c8edad6be1e458ad" style="width: 100.0%; height: 100.0%;">     <b>그란도쿄 사우스 타워</b> / <i>GranTokyo South Tower</i><br>     <b>회사</b>: 미츠비시지쇼 / Mitsubishi Estate<br>     <b>연도</b>: 2007<br>     <b>유형</b>: Office/Retail<br>     <b>GFA</b>: N/A ㎡<br>     <b>층수</b>: 42F<br>     <b>공공기여</b>: Station front redevelopment     </div>`)[0];
+            popup_0265fc48f986404e1d6c5a96d86f0c06.setContent(html_61ba212473ec8754c8edad6be1e458ad);
+        
+
+        marker_e55730c359a8df9bd9a61b8bd5900fd9.bindPopup(popup_0265fc48f986404e1d6c5a96d86f0c06)
+        ;
+
+        
+    
+    
+            marker_e55730c359a8df9bd9a61b8bd5900fd9.bindTooltip(
+                `<div>
+                     그란도쿄 사우스 타워 (GranTokyo South Tower)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2657b1ec561e0fd4a53dbfaedf48068d = L.marker(
+                [35.6819, 139.7683],
+                {}
+            ).addTo(marker_cluster_62f3f0d277eb77dcc2e35b97ff81e01b);
+        
+    
+            var icon_199b43faf72bd043d12bcd8d1684f96e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2657b1ec561e0fd4a53dbfaedf48068d.setIcon(icon_199b43faf72bd043d12bcd8d1684f96e);
+        
+    
+        var popup_0495b5c53323a7d10abb9cf48a480a4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f85b19dbd144ab71305771c4ba93153 = $(`<div id="html_6f85b19dbd144ab71305771c4ba93153" style="width: 100.0%; height: 100.0%;">     <b>그란도쿄 노스 타워</b> / <i>GranTokyo North Tower</i><br>     <b>회사</b>: 미츠비시지쇼 / Mitsubishi Estate<br>     <b>연도</b>: 2007<br>     <b>유형</b>: Office/Retail<br>     <b>GFA</b>: N/A ㎡<br>     <b>층수</b>: 43F<br>     <b>공공기여</b>: Station front redevelopment     </div>`)[0];
+            popup_0495b5c53323a7d10abb9cf48a480a4d.setContent(html_6f85b19dbd144ab71305771c4ba93153);
+        
+
+        marker_2657b1ec561e0fd4a53dbfaedf48068d.bindPopup(popup_0495b5c53323a7d10abb9cf48a480a4d)
+        ;
+
+        
+    
+    
+            marker_2657b1ec561e0fd4a53dbfaedf48068d.bindTooltip(
+                `<div>
+                     그란도쿄 노스 타워 (GranTokyo North Tower)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_f0915412a14d6492c48cd1a42e998d79 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2745c2a57d0a362698d4619dd3e1413f,
+                },
+                overlays :  {
+                    "\ubaa8\ub9ac \ube4c\ub529 / Mori Building" : feature_group_ddd174d45625a8b17dca67bb528356b2,
+                    "\ub3c4\ud050 / Tokyu" : feature_group_cbac7e33ff83369d4735b1fbe19f6399,
+                    "\ubbf8\uce20\uc774\ud6c4\ub3c4\uc0b0 / Mitsui Fudosan" : feature_group_25bbcf2b6245c9dee692a383c9a96ce4,
+                    "\ubbf8\uce20\ube44\uc2dc\uc9c0\uc1fc / Mitsubishi Estate" : feature_group_538d3bc1ed42ccd9d701ad0107ac97fb,
+                },
+            };
+            L.control.layers(
+                layer_control_f0915412a14d6492c48cd1a42e998d79.base_layers,
+                layer_control_f0915412a14d6492c48cd1a42e998d79.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_fc50891ba0bc8aeb19907c3bc3c051f9);
+        
+</script>
+</html>

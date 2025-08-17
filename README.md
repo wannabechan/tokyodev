@@ -1,31 +1,28 @@
-# Tokyo Developers Projects Map (Layers & Metrics)
+# Tokyo Developers Map — 4 Companies (Mori / Tokyu / Mitsui Fudosan / Mitsubishi Estate)
 
-This folder contains a single-page Leaflet/Folium map: **index.html**.
-You can host it anywhere that serves static files (GitHub Pages, Netlify, Vercel, or any web server).
+This repo contains a lightweight **Leaflet** map that loads project points from **GeoJSON**.
+You can deploy it directly with **GitHub Pages**.
 
-## Quick Deploy Options
+## Files
+- `index.html` — main map (pure JS/Leaflet). It fetches data from `data/projects_4cos.geojson`.
+- `data/projects_4cos.geojson` — project data (coordinates + properties).
+- `data/projects_4cos.csv` — same data in CSV for editing.
+- `folium_export.html` — optional Folium-rendered map (no external data file).
 
-### 1) Netlify (no code, drag & drop)
-- Go to https://app.netlify.com/drop
-- Drag the entire folder to deploy.
-- You'll get a public URL immediately.
+## One-click Deploy (GitHub Pages)
+1. Create a new public repo and upload all files (keep the folder structure).
+2. In the repo, go to **Settings → Pages**.
+3. Select **Branch: main** and **/(root)**, then **Save**.
+4. Your site will be available at: `https://<username>.github.io/<repo-name>/`
 
-### 2) GitHub Pages
-- Create a new GitHub repository (public).
-- Upload **index.html** to the repository root.
-- In the repository settings, enable **Pages** → **Branch: main** → **/(root)**.
-- Your site will be available at `https://<your-username>.github.io/<repo-name>/`.
-
-### 3) Vercel (CLI or dashboard)
-- Create a new project, import this folder, and deploy.
-- Vercel will give you a public URL.
-
-### 4) Any static web host / your own server
-- Copy **index.html** to your web root (e.g., `/var/www/html/`), then visit your domain.
+## Edit / Add Projects
+- Update `data/projects_4cos.csv` and/or `data/projects_4cos.geojson`.
+- If you edit only CSV, re-generate GeoJSON or ensure your map reads the CSV via JS.
+- For quick changes, you can also manually edit `projects_4cos.geojson`:
+  - Each feature is a Point with `coordinates: [Lng, Lat]`.
+  - Properties include: `Company`, `회사`, `Project`, `프로젝트`, `Year`, `Type`, `GFA`, `Floors`, `Public Benefit`.
 
 ## Notes
-- The map uses Leaflet tiles from standard CDNs; it requires an internet connection for basemap tiles.
-- If you need a custom basemap or want to serve tiles locally, switch the tiles URL in the Folium code before exporting.
-
-## File List
-- `index.html` — The interactive map (company layers toggle + metrics in popups).
+- Basemap tiles use OpenStreetMap.
+- Layer toggles at top-right let you show/hide each company.
+- Popups show bilingual names + GFA, floors, and public-benefit notes.
